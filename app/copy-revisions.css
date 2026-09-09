@@ -1,0 +1,487 @@
+/* Copy hierarchy shared across the variants; each original composition remains. */
+.event-identity {
+  margin: 0 0 28px;
+}
+.event-identity .last-edition {
+  display: inline-flex;
+  padding: 5px 10px;
+  border: 1px solid #ef9f7370;
+  color: #ffcba5;
+  background: #f79a6010;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.13em;
+  font-weight: 650;
+  margin-bottom: 12px;
+}
+.event-identity > p {
+  font-size: 28px;
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  font-weight: 650;
+  color: #fff;
+}
+.variant-b .hero h1 {
+  font-size: clamp(49px, 4.8vw, 69px);
+}
+.last-edition-note {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  padding: 18px 22px;
+  margin: 30px 0;
+  border: 1px solid #7a80734a;
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.last-edition-note > span {
+  background: #ffb880;
+  color: #183041;
+  padding: 5px 9px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+.last-edition-note > strong {
+  margin-left: auto;
+  font-size: 13px;
+  font-weight: 500;
+}
+.variant-b .degree-trust {
+  white-space: normal;
+  font-size: 22px;
+  line-height: 1.2;
+}
+.mentor-qualifications {
+  margin-top: 25px;
+}
+.mentor-qualifications p {
+  font-size: 16px;
+  line-height: 1.85;
+  margin: 20px 0 0;
+}
+.mentor-qualifications p strong {
+  font-weight: 650;
+}
+.mentor-education {
+  color: inherit;
+}
+.ecosystem-authority {
+  padding-left: 20px;
+  border-left: 3px solid #e8925c;
+}
+.specialist-list {
+  padding: 0;
+  margin: 24px 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+.specialist-list li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2px 12px;
+  padding: 14px 17px;
+  border: 1px solid #77909a45;
+  border-radius: 8px;
+  background: #748f9f07;
+}
+.specialist-list li > span {
+  grid-column: 1;
+  font-size: 12px;
+  line-height: 1.5;
+  opacity: 0.85;
+}
+.specialist-list li > strong {
+  grid-column: 1;
+  font-size: 16px;
+  font-weight: 550;
+  line-height: 1.45;
+}
+.specialist-list li > small {
+  grid-column: 2;
+  grid-row: 1/3;
+  align-self: center;
+  font-size: 12px;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+}
+.mentor-qualifications .further-education {
+  font-size: 15px;
+}
+.mentor-qualifications .international-education,
+.mentor-qualifications .clinical-practice {
+  font-size: 14px;
+  opacity: 0.9;
+}
+.variant-b .mentor-qualifications {
+  color: #cfdee6;
+}
+.variant-b .specialist-list li {
+  border-color: #849eaf45;
+  background: #ffffff04;
+}
+.variant-b .specialist-list li > small {
+  color: #f8c79c;
+}
+.variant-b .footer {
+  flex-wrap: wrap;
+}
+.variant-b .footer > .footer-love {
+  flex-basis: 100%;
+  color: #f8d3b1;
+  font-size: 27px;
+  padding-bottom: 15px;
+}
+.variant-c .event-identity {
+  border: 1px solid #a4b8ac3b;
+  background: #ffffff03;
+  border-radius: 12px;
+  padding: 15px 20px;
+  width: fit-content;
+  margin-bottom: 25px;
+}
+.variant-c .event-identity .last-edition {
+  font-size: 10px;
+  margin-bottom: 9px;
+  padding: 3px 7px;
+}
+.variant-c .event-identity > p {
+  font-size: 26px;
+}
+.variant-c .announcement {
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+.variant-c .mentor-seal > strong {
+  font-size: 18px;
+}
+.variant-c .hero-bottom p:first-child {
+  flex-wrap: wrap;
+  max-width: 470px;
+}
+.variant-c .mentor-copy .mentor-qualifications p {
+  font-size: 16px;
+}
+.variant-c .mentor-copy .mentor-qualifications .international-education,
+.variant-c .mentor-copy .mentor-qualifications .clinical-practice {
+  font-size: 14px;
+}
+.variant-c .c-video-proof {
+  margin-top: 60px;
+}
+.variant-c .c-video-disclaimer {
+  font-size: 12px;
+  color: #b8ccd1;
+  margin-top: 20px;
+}
+.variant-c .footer-top p > span {
+  font-style: italic;
+}
+
+/* Six real portrait videos, no cropping or horizontal video frame. */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 16px;
+}
+.portrait-testimonial {
+  min-width: 0;
+  display: block;
+  padding: 0;
+  text-align: left;
+  background: #0c2a3d;
+  color: #fff;
+  border: 1px solid #668b9e5c;
+  border-radius: 10px;
+  overflow: hidden;
+  transition:
+    border-color 0.2s,
+    transform 0.2s;
+}
+.portrait-testimonial:hover {
+  border-color: #ffa96b;
+  transform: translateY(-3px);
+}
+.portrait-testimonial-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9/16;
+  background: #071c2b;
+}
+.portrait-testimonial-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.portrait-play {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #ffb680;
+  color: #102c40;
+  box-shadow: 0 5px 15px #0004;
+}
+.portrait-play svg {
+  margin-left: 2px;
+}
+.portrait-testimonial-caption {
+  padding: 16px 13px;
+}
+.portrait-testimonial-caption > strong {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+.portrait-testimonial-caption > span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  color: #bdd2de;
+  font-size: 12px;
+  margin-top: 6px;
+  line-height: 1.5;
+}
+.portrait-dialog {
+  --ring: #ffb680;
+  display: grid !important;
+  grid-template-rows: auto minmax(0, 1fr) auto !important;
+  gap: 0 !important;
+  padding: 0 !important;
+  height: min(900px, 94dvh) !important;
+  width: min(490px, 94vw) !important;
+  max-width: min(490px, 94vw) !important;
+  max-height: 94dvh !important;
+  background: #030b12 !important;
+  color: #fff !important;
+  border-radius: 14px !important;
+  border: 1px solid #5c7887 !important;
+  overflow: hidden;
+}
+.portrait-dialog-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 14px 10px 20px;
+  min-height: 60px;
+  background: #0b2536;
+}
+.portrait-dialog-heading [data-slot='dialog-title'] {
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+}
+.portrait-dialog-heading button {
+  display: grid;
+  place-items: center;
+  height: 44px;
+  width: 44px;
+  border: 1px solid #8facbc60;
+  border-radius: 50%;
+  background: #16384b;
+  color: #fff;
+  flex-shrink: 0;
+}
+.portrait-video-stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+  background: #000;
+}
+.portrait-video-stage iframe {
+  height: 100%;
+  aspect-ratio: 9/16;
+  width: auto;
+  max-width: 100%;
+  border: 0;
+  display: block;
+}
+.portrait-external {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  font-size: 13px;
+  color: #d4e2e8;
+  background: #0b2536;
+}
+@media (max-width: 1100px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+  }
+  .variant-b .hero h1 {
+    font-size: 54px;
+  }
+  .variant-b .degree-trust {
+    font-size: 20px;
+  }
+  .specialist-list li {
+    grid-template-columns: 1fr;
+  }
+  .specialist-list li > small {
+    grid-column: 1;
+    grid-row: auto;
+    margin-top: 4px;
+  }
+}
+@media (max-width: 700px) {
+  .event-identity {
+    margin-bottom: 23px;
+  }
+  .event-identity > p {
+    font-size: 26px;
+  }
+  .event-identity .last-edition {
+    font-size: 11px;
+    padding: 4px 8px;
+    margin-bottom: 10px;
+  }
+  .variant-b .hero h1 {
+    font-size: clamp(40px, 10.6vw, 60px);
+  }
+  .variant-b .degree-trust {
+    font-size: 17px;
+  }
+  .last-edition-note {
+    display: block;
+    padding: 18px;
+    margin-block: 24px;
+    font-size: 15px;
+  }
+  .last-edition-note > span {
+    display: table;
+    margin-bottom: 10px;
+  }
+  .last-edition-note > strong {
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+  }
+  .testimonials-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+  .portrait-testimonial-caption {
+    padding: 13px 11px;
+  }
+  .portrait-testimonial-caption > strong {
+    font-size: 20px;
+  }
+  .portrait-testimonial-caption > span {
+    font-size: 12px;
+  }
+  .portrait-play {
+    width: 38px;
+    height: 38px;
+    bottom: 10px;
+    right: 10px;
+  }
+  .portrait-dialog {
+    top: 0 !important;
+    left: 0 !important;
+    translate: 0 0 !important;
+    transform: none !important;
+    height: 100dvh !important;
+    max-height: 100dvh !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+  }
+  .portrait-dialog-heading {
+    padding-top: max(8px, env(safe-area-inset-top));
+  }
+  .portrait-external {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .portrait-video-stage iframe {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+  }
+  .variant-c .event-identity {
+    padding: 13px 16px;
+  }
+  .variant-c .event-identity > p {
+    font-size: 24px;
+  }
+  .variant-c .announcement {
+    font-size: 10px;
+    text-align: center;
+    line-height: 1.6;
+  }
+  .variant-c .announcement-divider {
+    display: none;
+  }
+  .variant-c .announcement > span:last-child {
+    display: block;
+    width: 100%;
+    font-size: 12px;
+  }
+  .variant-c .hero-bottom p:first-child {
+    max-width: none;
+  }
+  .variant-c .c-video-proof {
+    margin-top: 38px;
+  }
+  .variant-c .mentor-section {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .variant-c .mentor-section > * {
+    min-width: 0;
+  }
+  .variant-c .mentor-copy .signature {
+    white-space: normal;
+  }
+  .variant-c .mentor-copy h2 br {
+    display: block;
+  }
+  .variant-b .footer > .footer-love {
+    font-size: 25px;
+  }
+}
+@media (max-width: 360px) {
+  .event-identity > p {
+    font-size: 24px;
+  }
+  .variant-b .degree-trust {
+    font-size: 15px;
+  }
+  .portrait-testimonial-caption > strong {
+    font-size: 18px;
+  }
+  .portrait-testimonial-caption > span {
+    font-size: 11px;
+  }
+  .portrait-testimonial-caption > span svg {
+    display: none;
+  }
+  .testimonials-grid {
+    gap: 10px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .portrait-testimonial,
+  .portrait-dialog {
+    transition: none !important;
+    animation: none !important;
+  }
+}
